@@ -23,5 +23,7 @@ public class StudiKasus2_Dinamis {
         sisaTanah = (lebar * panjang) - (luasKolam + luasTaman);
 
         System.out.print("Sisa tanah yang tidak digunakan Pak Tono adalah " + sisaTanah);
+
+        input.close();
     }
 }

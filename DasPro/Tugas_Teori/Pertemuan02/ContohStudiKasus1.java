@@ -18,7 +18,7 @@ public class ContohStudiKasus1 {
  keliling = 2 * (lebar + panjang);
  System.out.println("Keliling kebun adalah: " + keliling);
 
-
+input.close();
         }
     }
 

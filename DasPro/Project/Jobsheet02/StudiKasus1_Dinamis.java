@@ -19,5 +19,7 @@ public class StudiKasus1_Dinamis {
     gajiBersih = gajiPokok + (tunjanganAnak * jumlahAnak) - danaPensiun;
 
     System.out.println("Gaji bersih yang diterima Pak Danur setiap bulan adalah " + gajiBersih);
+
+    input.close();
     }
 }

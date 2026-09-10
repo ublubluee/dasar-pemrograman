@@ -16,5 +16,6 @@ public class Bank16 {
 
         System.out.println("Jumlah bunga yang anda dapatkan adalah " + bunga);
         System.out.println("Jumlah tabungan akhir anda adalah " + jumlahTabunganAkhir);
+    sc.close();
     }
 }
