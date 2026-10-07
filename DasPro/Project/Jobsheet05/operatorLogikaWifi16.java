@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class operatorLogikaWifi16 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        boolean mahasiswa, dosen, akunDiblokir;
+
+        System.out.print("Apakah pengguna mahasiswa? (true/false): ");
+        mahasiswa = input.nextBoolean();
+        System.out.print("Apakah pengguna dosen? (true/false): ");
+        dosen = input.nextBoolean();
+        System.out.print("Apakah akun sedang diblokir? (true/false): ");
+        akunDiblokir = input.nextBoolean();
+
+        if ((mahasiswa && dosen) && !akunDiblokir) {
+            System.out.println("Akses WiFi diberikan");
+        } else {
+            System.out.println("Akses WiFi ditolak");
+        }
+    
+        input.close();
+    }
+}
