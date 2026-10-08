@@ -14,21 +14,27 @@ public class Latihan2_16 {
         double diskon = 0.0;
 
         if (hari.equalsIgnoreCase("Rabu")) {
-            if (jenisBuku.equalsIgnoreCase("Kamus") && jumlahBuku > 2) {
-                diskon = 0.12;
-            } else if (jenisBuku.equalsIgnoreCase("Kamus")) {
-                diskon = 0.10;
+            if (jenisBuku.equalsIgnoreCase("Kamus")) {
+                if (jumlahBuku > 2) {
+                    diskon = 0.12;
+                } else {
+                    diskon = 0.10;
+                }
+            } else if (jenisBuku.equalsIgnoreCase("Novel")) {
+                if (jumlahBuku > 3) {
+                    diskon = 0.09;
+                } else {
+                    diskon = 0.08;
+                }
+            } else if (jenisBuku.equalsIgnoreCase("Lainnya")) {
+                if (jumlahBuku > 3) {
+                    diskon = 0.07; 
+                } else {
+                    diskon = 0.05;
+                }
             }
         } else {
-            if (jenisBuku.equalsIgnoreCase("Novel") && jumlahBuku > 3) {
-                diskon = 0.09;
-             } else if (jenisBuku.equalsIgnoreCase("Novel") && jumlahBuku <= 3) {
-                diskon = 0.08;
-            } else if (jenisBuku.equalsIgnoreCase("Lainnya") && jumlahBuku > 3) {
-            diskon = 0.07; 
-            } else {
-            diskon = 0.05;
-            }
+            diskon = 0.0;
         }
 
         double totalBelanja = hargaBuku * jumlahBuku;
@@ -37,8 +43,8 @@ public class Latihan2_16 {
         System.out.println("=== TOKO BUKU IDAMANMU ===");
         System.out.println("Hari pembelian: " + hari);
         System.out.println("Jenis buku yang dibeli: " + jenisBuku);
-        System.out.println("Total belanjaan Anda: Rp. " + totalBelanja);
-        System.out.println("Besar diskon yang diberikan: Rp. " + hargaDiskon);
+        System.out.println("Total belanjaan Anda: Rp." + totalBelanja);
+        System.out.println("Besar diskon yang diberikan: Rp." + hargaDiskon);
         System.out.println("Total harga yang harus dibayar setelah diskon: Rp. " + totalBayar);
         System.out.println("=== TERIMA KASIH ===");
 
